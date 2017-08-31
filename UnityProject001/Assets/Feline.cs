@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Feline : MonoBehaviour {
+public class Feline : Mammal {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start()
+    {
+        Scratch();
+    }
+
+    void Scratch()
+    {
+        print(this.name + " Scratches");
+    }
 }
